@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16px
+}
+
+/* universal css start*/
+.text-orange {
+    color: #E94E34;
+}
+
+.text-black {
+    color: #1B0238;
+}
+
+.text-silver {
+    color: #6b6b84;
+}
+
+.bg-orange {
+    background: #EA512E;
+}
+
+.bg-yellow {
+    background: #f5890d !important;
+}
+
+.bg-lightyellow {
+    background: #fee9ca;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+.mt-6{height: 50px;}
+.mt-15 {
+    margin-top: 150px;
+}
+
+.mt-20 {
+    margin-top: 200px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #EA512E;
+    border-radius: 10px;
+    transition: 1s ease;
+    position: relative;
+    display: inline-block;
+    padding: 12px 35px;
+    overflow: hidden;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #f5890d;
+}
+
+p {
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+/* universal css end */
+
+/* header section start */
+.mainheader {
+    color: #1b0238;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+}
+
+.homemenu .nav-item a.active {
+    color: #EA512E !important;
+}
+
+/* header section end */
+/* banner section start */
+.banner {
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.shape-1 {
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}
+.shape-2{
+    top: 3.5%;
+    left: 50%;
+    animation: move2 2s linear alternate infinite;
+}
+.shape-3{
+    top: 61%;
+    z-index: 1;
+    left: .7%;
+    animation: move3 2s linear alternate infinite;
+}
+/* .shape-4{
+    left:55%;
+    z-index: 10;
+    animation: move3 2s linear alternate infinite;
+} */
+/* .cloud{
+    z-index:1;
+} */
+
+/* .img2{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+} */
+
+.banner h4 {
+    font-size: 16px;
+    color: #ea512e;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+
+.banner h1 {
+    color: #1B0238;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Catamaran", sans-serif;
+}
+
+/* banner section end */
+
+
+@keyframes move {
+    0% {}
+
+    100% {
+        left: 2%;
+    }
+}
+@keyframes move2 {
+    0%{}
+    100%{
+        left: 52.5%;
+    }
+    
+}
+@keyframes move3 {
+    0%{}
+    100%{
+        left: 2%;
+    }
+}
