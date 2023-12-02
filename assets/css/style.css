@@ -83,9 +83,39 @@ p {
     padding-bottom: 25px;
     font-family: "Roboto", sans-serif;
 }
-
+a.nav-link:hover,
+a.dropdown-item:hover{
+    color: #EA512E !important;
+    transition: 0.5s all;
+}
 .homemenu .nav-item a.active {
     color: #EA512E !important;
+}
+.homemenu2{
+    color: #EA512E !important;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+   
+}
+.dropdown-menu li a:hover {
+    color: #EA512E 
+}
+.dropdown-menu{
+    width: 230px;
+    border: none;
+    transition: all 4s ease-in-out;
+    border-radius: 0px;
+    box-shadow: 0px 0px 15px 0px #ccc;
+}
+.langmenu .dropdown-menu img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle; margin-left: 2px;
+}
+.dropdown-menu .dropdown-item{
+    padding: 10px 20px;
 }
 
 /* header section end */
@@ -109,19 +139,23 @@ p {
     animation: move2 2s linear alternate infinite;
 }
 .shape-3{
-    top: 61%;
+    top: 62%;
     z-index: 1;
     left: .7%;
     animation: move3 2s linear alternate infinite;
 }
-/* .shape-4{
+.shape-4{
     left:55%;
-    z-index: 10;
-    animation: move3 2s linear alternate infinite;
-} */
-/* .cloud{
-    z-index:1;
-} */
+    z-index: 2;
+    animation: move4 .7s linear  infinite;
+}
+.cloud{
+    max-width: 100%;
+    bottom: -105px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
 
 /* .img2{
     width: 100%;
@@ -166,5 +200,11 @@ p {
     0%{}
     100%{
         left: 2%;
+    }
+}
+@keyframes move4 {
+    0%{}
+    100%{
+        bottom: 2%;
     }
 }
