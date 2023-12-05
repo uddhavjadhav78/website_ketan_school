@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 * {
     margin: 0px;
@@ -38,6 +39,9 @@
     margin-top: 100px;
 }
 .mt-6{height: 50px;}
+.mt-7{
+    margin-top: 80px;
+}
 .mt-15 {
     margin-top: 150px;
 }
@@ -71,7 +75,11 @@ p {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
-
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    color: #1b0238;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
 /* universal css end */
 
 /* header section start */
@@ -151,7 +159,7 @@ a.dropdown-item:hover{
 }
 .cloud{
     max-width: 100%;
-    bottom: -105px;
+    bottom: -80px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -180,6 +188,58 @@ a.dropdown-item:hover{
 }
 
 /* banner section end */
+
+/* who we are section start */
+.whowe span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #EA512E;
+    font-family: 'Sacramento', cursive;
+}
+.whowe h3{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.whowe ul li{
+    color: #1b0238;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+}
+.whowe ul li span{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #EA512E;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    transition:all 0.9s ease-in;
+    font-family: "Roboto", sans-serif;
+}
+.whowe ul li:hover span{
+    background-color: #f5890d;
+    transition:all 0.9s ease-in;
+}
+.who-shape{
+    position: absolute;
+    right: 5%;
+    top:75px ;
+    transform: translateX(-5%);
+    /* top: 35px;
+    max-width: 120px;
+    animation: moveLeftBounce 3s linear infinite; */
+}
+.who-shape img{
+    height: 150px;
+    width: 100%;
+
+}
+/* who we are section end */
 
 
 @keyframes move {
