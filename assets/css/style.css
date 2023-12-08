@@ -164,13 +164,6 @@ a.dropdown-item:hover{
     right: 0;
     z-index: 1;
 }
-
-/* .img2{
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-} */
-
 .banner h4 {
     font-size: 16px;
     color: #ea512e;
@@ -229,10 +222,7 @@ a.dropdown-item:hover{
     position: absolute;
     right: 5%;
     top:75px ;
-    transform: translateX(-5%);
-    /* top: 35px;
-    max-width: 120px;
-    animation: moveLeftBounce 3s linear infinite; */
+    animation: move5 2s linear alternate infinite;
 }
 .who-shape img{
     height: 150px;
@@ -266,5 +256,11 @@ a.dropdown-item:hover{
     0%{}
     100%{
         bottom: 2%;
+    }
+}
+@keyframes move5 {
+    0%{}
+    100%{
+        right: 3.5%;
     }
 }
